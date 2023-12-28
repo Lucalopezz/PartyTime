@@ -1,0 +1,98 @@
+POST http://localhost:3000/api/services 
+Content-Type: application/json
+
+{
+  "name": "Alguem servico",
+  "description": "desc",
+  "price": 1400,
+  "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+}
+
+###
+
+GET http://localhost:3000/api/services 
+
+###
+
+GET http://localhost:3000/api/services/658cbc34b8d26d62df3e958e
+
+
+###
+DELETE  http://localhost:3000/api/services/658c91e18fd1e5108037eecc
+
+###
+
+PUT http://localhost:3000/api/services/658cbc34b8d26d62df3e958e
+Content-Type: application/json
+
+{
+  "name": "Algum serviço",
+  "description": "desc",
+  "price": 1400,
+  "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+}
+####
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Meu evento 2",
+  "author": "Lucas",
+  "description": "desc",
+  "budget": 2000,
+  "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD",
+  "services": [
+    {
+      "name": "Algum serviço",
+      "description": "desc",
+      "price": 1400,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+    },
+    {
+      "name": "Algum serviço 2",
+      "description": "desc",
+      "price": 1600,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+    }
+  ]
+}
+
+####
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/658d6268e5d870a7a42c4b46
+
+###
+
+DELETE  http://localhost:3000/api/parties/658d6268e5d870a7a42c4b46
+
+
+###
+PUT http://localhost:3000/api/parties/658d62fae5d870a7a42c4b48
+Content-Type: application/json
+
+{
+  "title": "Meu evento 2",
+  "author": "Lucas Lopes",
+  "description": "desc",
+  "budget": 20000,
+  "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD",
+  "services": [
+    {
+      "name": "Algum serviço",
+      "description": "desc",
+      "price": 1400,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+    },
+    {
+      "name": "Algum serviço 2",
+      "description": "desc",
+      "price": 1600,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
+    }
+  ]
+}
