@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Banco
 const conn = require("./db/conn.js");
@@ -12,7 +13,7 @@ conn();
 const routes = require("./routes/router.js"); 
 app.use("/api", routes);
 
-app.use(cors());
+
 app.use(express.json());
 
 app.listen(3000, () => {
