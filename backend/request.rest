@@ -1,12 +1,12 @@
 POST http://localhost:3000/api/services 
 Content-Type: application/json
 
-{
-  "name": "Alguem servico",
-  "description": "desc",
-  "price": 1400,
-  "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alternativagameselan.com.br%2Fproduto%2Fproduto-teste---nao-usar-%2F55%2F&psig=AOvVaw1whj4aGNKnjp0McSkd7Az0&ust=1703794732041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC9lZG4sIMDFQAAAAAdAAAAABAD"
-}
+  {
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
 
 ###
 
