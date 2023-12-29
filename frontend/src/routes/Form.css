@@ -1,13 +1,16 @@
+/* Estilo do título e parágrafos dentro da classe .form-page */
 .form-page h2,
 .form-page p {
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/* Estilo do parágrafo dentro da classe .form-page com cor específica */
 .form-page p {
   color: #7703fc;
 }
 
+/* Estilo do formulário dentro da classe .form-page */
 .form-page form {
   background-color: #fff;
   border: 1px solid #cfcfcf;
@@ -18,6 +21,7 @@
   margin-bottom: 3rem;
 }
 
+/* Estilo da etiqueta do formulário dentro da classe .form-page */
 .form-page label {
   color: #747990;
   margin-bottom: 1rem;
@@ -26,55 +30,72 @@
   gap: 0.5rem;
 }
 
+/* Estilo dos campos de input e textarea dentro da classe .form-page */
 .form-page input,
 .form-page textarea {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid #cfcfcf;
+  width: 100%; /* Preenche a largura do contêiner */
 }
 
+/* Estilo do placeholder dentro dos campos de input na classe .form-page */
 .form-page input::placeholder {
   color: #a4a7b4;
 }
 
+/* Estilo dos itens individuais de serviço dentro da classe .form-page */
 .form-page .service {
   max-width: 29%;
   text-align: center;
 }
-.form-page .service img{
-    width: 100%;
-  }
-.services-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-.form-page .service p {
-  margin-bottom: 0rem;
+
+/* Estilo da imagem dentro do item de serviço dentro da classe .form-page */
+.form-page .service img {
+  width: 100%;
+  max-height: 120px; 
+  object-fit: cover;
+  border-radius: 8px; 
 }
 
+/* Estilo do texto abaixo da imagem dentro do item de serviço dentro da classe .form-page */
+.form-page .service p {
+  margin-bottom: 0; 
+}
+
+/* Estilo do contêiner da caixa de seleção dentro da classe .form-page */
 .form-page .checkbox-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.6rem;
+
 }
 
+/* Estilo do nome do serviço dentro da classe .form-page */
 .form-page .service-name {
   font-weight: bold;
 }
 
+/* Estilo do preço do serviço dentro da classe .form-page */
 .form-page .service-price {
   color: #747990;
 }
 
+/* Estilo do texto abaixo da caixa de seleção dentro da classe .form-page */
 .form-page .checkbox-container p {
   color: #747990;
   font-size: 0.7rem;
+
+  white-space: nowrap;
 }
 
+/* Estilo do botão dentro da classe .form-page */
 .form-page .btn {
   max-width: 150px;
   margin: 1rem auto;
   font-size: 1.2rem;
+  background-color: #7703fc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+ 
 }

@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const loadParties = async () => {
       const res = await partyFetch.get("/parties");
-      console.log(res.data);
+
       setparties(res.data);
     };
 

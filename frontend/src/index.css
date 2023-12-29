@@ -1,3 +1,4 @@
+/* Reset padrão e configurações globais */
 * {
   padding: 0;
   margin: 0;
@@ -5,57 +6,81 @@
   font-family: "Lato", sans-serif;
 }
 
+/* Estilo do corpo da página */
 body {
   background-color: #f5f6fa;
 }
 
+/* Estilo da lista não ordenada */
 ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
+/* Estilo do link */
 a {
   color: #283252;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Estilo do parágrafo */
 p {
   color: #747990;
 }
 
+/* Estilo do formulário */
 form {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto; /* Centraliza o formulário na página */
 }
 
+/* Estilo da etiqueta do formulário */
 label {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
 
+/* Estilo do contêiner da caixa de seleção */
 .checkbox-container {
   display: flex;
+  align-items: center; /* Alinha a caixa de seleção verticalmente ao texto */
 }
 
-.btn,
-.btn-secondary {
+/* Estilo do botão primário */
+.btn {
   background-color: #7703fc;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: 0.4s;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
+/* Efeito de hover para o botão primário */
 .btn:hover {
   opacity: 0.8;
 }
 
+/* Estilo do botão secundário */
 .btn-secondary {
   background-color: #fff;
   color: #283252;
   border: 1px solid #cfcfcf;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Efeito de hover para o botão secundário */
+.btn-secondary:hover {
+  opacity: 0.8;
 }
